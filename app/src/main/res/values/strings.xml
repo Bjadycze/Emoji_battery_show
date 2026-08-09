@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emoji baterie</string>
+    <string name="channel_name">Stav baterie</string>
+    <string name="channel_desc">Trvalé oznámení, které drží emoji ikonu ve stavovém řádku.</string>
+    <string name="channel_silent_name">Stav baterie (bez ikony)</string>
+    <string name="channel_silent_desc">Použije se v režimu „Jen bublina“. Oznámení zůstane v roletce, ale ve stavovém řádku se ikona neobjeví.</string>
+    <string name="state_charging">Nabíjí se</string>
+    <string name="state_discharging">Na baterii</string>
+    <string name="widget_label">Emoji baterie</string>
+    <string name="widget_desc">Emoji podle stavu baterie na ploše.</string>
+
+    <string name="app_subtitle">Zdarma, bez reklam, bez přístupu k internetu.</string>
+    <string name="current_status">aktuální stav baterie</string>
+    <string name="preview">náhled</string>
+    <string name="show_current">Zobrazit aktuální stav</string>
+    <string name="where_to_show">Kde zobrazovat</string>
+    <string name="emoji_set">Sada emoji</string>
+    <string name="status_bar">Stavový řádek</string>
+    <string name="show_percent_instead">Zobrazit procenta vedle emoji</string>
+    <string name="show_percent_desc">Ve stavovém řádku se vedle emoji zobrazí i úroveň baterie v procentech.</string>
+    <string name="charging_emoji">Zvláštní emoji při nabíjení</string>
+    <string name="charging_emoji_desc">Během nabíjení se použije %s</string>
+    <string name="floating_bubble">Plovoucí bublina</string>
+    <string name="bubble_not_active">Bublinu zapnete výše volbou „Lišta i bublina“ nebo „Jen bublina“. Je to jediné místo, kde emoji zůstane plnobarevné, a lze ji přetáhnout prstem.</string>
+    <string name="bubble_show_percent">Zobrazit procenta v bublině</string>
+    <string name="bubble_size">Velikost bubliny: %d</string>
+    <string name="bubble_bg">Pozadí bubliny: %d %%</string>
+    <string name="bubble_bg_desc">100 %% je plná černá, 25 %% sotva znatelný podklad.</string>
+    <string name="home_widget">Widget na plochu</string>
+    <string name="home_widget_desc">Podržte prst na ploše, otevřete seznam widgetů a přidejte „Emoji baterie“. Widget ukazuje emoji v plných barvách.</string>
+    <string name="disappearing_icon">Ikona mizí po pár hodinách?</string>
+    <string name="disappearing_icon_desc">Některé systémy (Xiaomi, Samsung, Huawei) službu ukončí kvůli úspoře energie. Pomůže vyjmout aplikaci z optimalizace baterie.</string>
+    <string name="open_battery_settings">Otevřít nastavení baterie</string>
+
+    <string name="hide_system_battery_title">Skrýt systémovou baterii</string>
+    <string name="hide_system_battery_desc">Chcete-li, aby emoji ikona vypadala jako jediný ukazatel, můžete v nastavení systému skrýt původní ikonu baterie. Tato možnost se obvykle nachází v „Nastavení > Displej > Stavový řádek“.</string>
+    <string name="hide_system_battery_btn">Otevřít nastavení lišty</string>
+    <string name="hide_system_battery_notif_btn">Otevřít Oznámení a stavový řádek</string>
+
+    <string name="about_app">O aplikaci</string>
+    <string name="app_version">Emoji baterie %s</string>
+    <string name="mit_license">Otevřený zdrojový kód pod licencí MIT. Bez reklam, bez sledování, bez oprávnění k internetu.</string>
+    <string name="view_github">Zobrazit projekt na GitHubu</string>
+
+    <string name="language">Jazyk</string>
+    <string name="more_settings">Více nastavení</string>
+    <string name="back">Zpět</string>
+
+    <string name="set_meter">Kreslená baterie</string>
+    <string name="set_cars">Autíčka</string>
+    <string name="set_moon">Měsíční fáze</string>
+    <string name="set_face">Nálady</string>
+    <string name="set_heart">Srdíčka</string>
+    <string name="set_weather">Počasí</string>
+    <string name="set_plant">Rostlina</string>
+    <string name="set_food">Jídlo</string>
+    <string name="set_cat">Kočky</string>
+    <string name="set_dots">Semafor</string>
+
+    <string name="mode_off">Vypnuto</string>
+    <string name="mode_off_hint">Nic se nezobrazuje, služba neběží.</string>
+    <string name="mode_status">Jen stavová lišta</string>
+    <string name="mode_status_hint">Ikona v liště a oznámení v roletce.</string>
+    <string name="mode_both">Lišta i bublina</string>
+    <string name="mode_both_hint">Ikona v liště a k tomu barevná bublina.</string>
+    <string name="mode_bubble">Jen bublina</string>
+    <string name="mode_bubble_hint">Barevná bublina bez ikony ve stavovém řádku.</string>
+</resources>

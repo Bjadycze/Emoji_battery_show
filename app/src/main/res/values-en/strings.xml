@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emoji Battery</string>
+    <string name="channel_name">Battery Status</string>
+    <string name="channel_desc">Persistent notification that keeps the emoji icon in the status bar.</string>
+    <string name="channel_silent_name">Battery Status (no icon)</string>
+    <string name="channel_silent_desc">Used in \"Bubble only\" mode. The notification stays in the tray, but the icon does not appear in the status bar.</string>
+    <string name="state_charging">Charging</string>
+    <string name="state_discharging">Discharging</string>
+    <string name="widget_label">Emoji Battery</string>
+    <string name="widget_desc">Emoji based on battery status on the home screen.</string>
+
+    <string name="app_subtitle">Free, no ads, no internet access.</string>
+    <string name="current_status">current battery status</string>
+    <string name="preview">preview</string>
+    <string name="show_current">Show current status</string>
+    <string name="where_to_show">Where to show</string>
+    <string name="emoji_set">Emoji set</string>
+    <string name="status_bar">Status bar</string>
+    <string name="show_percent_instead">Show percentage next to emoji</string>
+    <string name="show_percent_desc">In the status bar, the battery level will be shown next to the emoji icon.</string>
+    <string name="charging_emoji">Special emoji while charging</string>
+    <string name="charging_emoji_desc">%s will be used during charging</string>
+    <string name="floating_bubble">Floating bubble</string>
+    <string name="bubble_not_active">Enable the bubble above by selecting \"Bar &amp; Bubble\" or \"Just Bubble\". This is the only place where the emoji stays in full color and can be dragged.</string>
+    <string name="bubble_show_percent">Show percentage in bubble</string>
+    <string name="bubble_size">Bubble size: %d</string>
+    <string name="bubble_bg">Bubble background: %d %%</string>
+    <string name="bubble_bg_desc">100 %% is solid black, 25 %% is a barely noticeable background.</string>
+    <string name="home_widget">Home screen widget</string>
+    <string name="home_widget_desc">Press and hold on the home screen, open the widgets list and add \"Emoji Battery\". The widget shows emojis in full color.</string>
+    <string name="disappearing_icon">Icon disappearing after a few hours?</string>
+    <string name="disappearing_icon_desc">Some systems (Xiaomi, Samsung, Huawei) terminate the service to save power. Removing the app from battery optimization helps.</string>
+    <string name="open_battery_settings">Open battery settings</string>
+
+    <string name="hide_system_battery_title">Hide system battery</string>
+    <string name="hide_system_battery_desc">To make the emoji icon look like the primary indicator, you can hide the original battery icon in system settings. This option is usually found in \"Settings > Display > Status bar\".</string>
+    <string name="hide_system_battery_btn">Open status bar settings</string>
+    <string name="hide_system_battery_notif_btn">Open Notifications &amp; status bar</string>
+
+    <string name="about_app">About app</string>
+    <string name="app_version">Emoji Battery %s</string>
+    <string name="mit_license">Open source under MIT license. No ads, no tracking, no internet access.</string>
+    <string name="view_github">View project on GitHub</string>
+
+    <string name="language">Language</string>
+    <string name="more_settings">More settings</string>
+    <string name="back">Back</string>
+
+    <string name="set_meter">Drawn battery</string>
+    <string name="set_cars">Cars</string>
+    <string name="set_moon">Moon phases</string>
+    <string name="set_face">Moods</string>
+    <string name="set_heart">Hearts</string>
+    <string name="set_weather">Weather</string>
+    <string name="set_plant">Plants</string>
+    <string name="set_food">Food</string>
+    <string name="set_cat">Cats</string>
+    <string name="set_dots">Traffic light</string>
+
+    <string name="mode_off">Off</string>
+    <string name="mode_off_hint">Nothing is shown, service is not running.</string>
+    <string name="mode_status">Status bar only</string>
+    <string name="mode_status_hint">Icon in the bar and notification in the tray.</string>
+    <string name="mode_both">Bar &amp; Bubble</string>
+    <string name="mode_both_hint">Icon in the bar plus a colored bubble.</string>
+    <string name="mode_bubble">Bubble only</string>
+    <string name="mode_bubble_hint">Colored bubble without status bar icon.</string>
+</resources>
