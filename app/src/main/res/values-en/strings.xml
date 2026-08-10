@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Emoji Battery</string>
+    <string name="app_name">Emoji status battery</string>
     <string name="channel_name">Battery Status</string>
     <string name="channel_desc">Persistent notification that keeps the emoji icon in the status bar.</string>
     <string name="channel_silent_name">Battery Status (no icon)</string>
     <string name="channel_silent_desc">Used in \"Bubble only\" mode. The notification stays in the tray, but the icon does not appear in the status bar.</string>
     <string name="state_charging">Charging</string>
     <string name="state_discharging">Discharging</string>
-    <string name="widget_label">Emoji Battery</string>
+    <string name="widget_label">Emoji status battery</string>
     <string name="widget_desc">Emoji based on battery status on the home screen.</string>
 
     <string name="app_subtitle">Free, no ads, no internet access.</string>
@@ -28,7 +28,7 @@
     <string name="bubble_bg">Bubble background: %d %%</string>
     <string name="bubble_bg_desc">100 %% is solid black, 25 %% is a barely noticeable background.</string>
     <string name="home_widget">Home screen widget</string>
-    <string name="home_widget_desc">Press and hold on the home screen, open the widgets list and add \"Emoji Battery\". The widget shows emojis in full color.</string>
+    <string name="home_widget_desc">Press and hold on the home screen, open the widgets list and add \"Emoji status battery\". The widget shows emojis in full color.</string>
     <string name="disappearing_icon">Icon disappearing after a few hours?</string>
     <string name="disappearing_icon_desc">Some systems (Xiaomi, Samsung, Huawei) terminate the service to save power. Removing the app from battery optimization helps.</string>
     <string name="open_battery_settings">Open battery settings</string>
@@ -39,7 +39,7 @@
     <string name="hide_system_battery_notif_btn">Open Notifications &amp; status bar</string>
 
     <string name="about_app">About app</string>
-    <string name="app_version">Emoji Battery %s</string>
+    <string name="app_version">Emoji status battery %s</string>
     <string name="mit_license">Open source under MIT license. No ads, no tracking, no internet access.</string>
     <string name="view_github">View project on GitHub</string>
 

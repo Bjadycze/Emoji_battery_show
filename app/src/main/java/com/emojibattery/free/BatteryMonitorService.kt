@@ -11,7 +11,6 @@ import android.content.IntentFilter
 import android.content.SharedPreferences
 import android.content.pm.ServiceInfo
 import android.graphics.Color
-import android.graphics.drawable.BitmapDrawable
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ImageSpan
@@ -29,6 +28,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.ServiceCompat
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.IconCompat
+import androidx.core.graphics.drawable.toDrawable
 
 class BatteryMonitorService : Service(), SharedPreferences.OnSharedPreferenceChangeListener {
 
@@ -71,7 +71,9 @@ class BatteryMonitorService : Service(), SharedPreferences.OnSharedPreferenceCha
             this, NOTIF_ID, buildNotification(channel), foregroundType()
         )
         postedChannel = channel
-        refresh()
+        // Notifikace je hotová z startForeground výše, refresh() by ji jen zbytečně sestavil znovu.
+        syncBubble()
+        BatteryWidgetProvider.renderAll(this, info, prefs)
         return START_STICKY
     }
 
@@ -211,11 +213,15 @@ class BatteryMonitorService : Service(), SharedPreferences.OnSharedPreferenceCha
         val suffix = if (prefs.overlayShowPercent) " ${info.level}%" else ""
         if (!set.drawn) return glyph + suffix
 
-        val px = (prefs.overlaySize * resources.displayMetrics.scaledDensity * 1.5f).toInt()
+        val px = (TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_SP,
+            prefs.overlaySize.toFloat(),
+            resources.displayMetrics
+        ) * 1.5f).toInt()
         val bitmap = EmojiRenderer.battery(
             info.level, info.charging && prefs.chargingEmoji, px, colored = true
         )
-        val drawable = BitmapDrawable(resources, bitmap).apply { setBounds(0, 0, px, px) }
+        val drawable = bitmap.toDrawable(resources).apply { setBounds(0, 0, px, px) }
         val text = SpannableString("\u200B$suffix")
         text.setSpan(
             ImageSpan(drawable, ImageSpan.ALIGN_BOTTOM),
@@ -275,6 +281,7 @@ class BatteryMonitorService : Service(), SharedPreferences.OnSharedPreferenceCha
                     true
                 }
                 MotionEvent.ACTION_UP -> {
+                    view.performClick()
                     prefs.overlayX = lp.x
                     prefs.overlayY = lp.y
                     true

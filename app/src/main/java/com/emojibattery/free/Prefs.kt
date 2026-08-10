@@ -30,7 +30,7 @@ class Prefs(context: Context) {
     val enabled: Boolean get() = mode.running
 
     var setId: String
-        get() = sp.getString(KEY_SET, "battery") ?: "battery"
+        get() = sp.getString(KEY_SET, "meter") ?: "meter"
         set(v) = sp.edit().putString(KEY_SET, v).apply()
 
     /** Ve stavovém řádku ukázat číslo místo siluety emoji. */

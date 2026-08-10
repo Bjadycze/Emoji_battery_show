@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Emoji baterie</string>
+    <string name="app_name">Emoji status battery</string>
     <string name="channel_name">Stav baterie</string>
     <string name="channel_desc">Trvalé oznámení, které drží emoji ikonu ve stavovém řádku.</string>
     <string name="channel_silent_name">Stav baterie (bez ikony)</string>
     <string name="channel_silent_desc">Použije se v režimu „Jen bublina“. Oznámení zůstane v roletce, ale ve stavovém řádku se ikona neobjeví.</string>
     <string name="state_charging">Nabíjí se</string>
     <string name="state_discharging">Na baterii</string>
-    <string name="widget_label">Emoji baterie</string>
+    <string name="widget_label">Emoji status battery</string>
     <string name="widget_desc">Emoji podle stavu baterie na ploše.</string>
 
     <string name="app_subtitle">Zdarma, bez reklam, bez přístupu k internetu.</string>
@@ -28,7 +28,7 @@
     <string name="bubble_bg">Pozadí bubliny: %d %%</string>
     <string name="bubble_bg_desc">100 %% je plná černá, 25 %% sotva znatelný podklad.</string>
     <string name="home_widget">Widget na plochu</string>
-    <string name="home_widget_desc">Podržte prst na ploše, otevřete seznam widgetů a přidejte „Emoji baterie“. Widget ukazuje emoji v plných barvách.</string>
+    <string name="home_widget_desc">Podržte prst na ploše, otevřete seznam widgetů a přidejte „Emoji status battery“. Widget ukazuje emoji v plných barvách.</string>
     <string name="disappearing_icon">Ikona mizí po pár hodinách?</string>
     <string name="disappearing_icon_desc">Některé systémy (Xiaomi, Samsung, Huawei) službu ukončí kvůli úspoře energie. Pomůže vyjmout aplikaci z optimalizace baterie.</string>
     <string name="open_battery_settings">Otevřít nastavení baterie</string>
@@ -39,7 +39,7 @@
     <string name="hide_system_battery_notif_btn">Otevřít Oznámení a stavový řádek</string>
 
     <string name="about_app">O aplikaci</string>
-    <string name="app_version">Emoji baterie %s</string>
+    <string name="app_version">Emoji status battery %s</string>
     <string name="mit_license">Otevřený zdrojový kód pod licencí MIT. Bez reklam, bez sledování, bez oprávnění k internetu.</string>
     <string name="view_github">Zobrazit projekt na GitHubu</string>
 

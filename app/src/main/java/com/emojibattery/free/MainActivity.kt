@@ -84,6 +84,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        // Dokud uživatel jazyk ručně nezvolí, výchozí je angličtina (bez ohledu na jazyk systému).
+        if (AppCompatDelegate.getApplicationLocales().isEmpty) {
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("en"))
+        }
         setContent {
             EmojiBatteryTheme {
                 Surface(
@@ -215,12 +219,13 @@ fun AppScreen() {
         modifier = Modifier
             .fillMaxSize()
             .windowInsetsPadding(WindowInsets.safeDrawing)
-            .verticalScroll(rememberScrollState())
-            .padding(horizontal = 20.dp)
     ) {
-        Spacer(Modifier.height(8.dp))
+        // Horní lišta (CZ/EN + nastavení) – vždy viditelná, nescrolluje s obsahem.
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(MaterialTheme.colorScheme.surface)
+                .padding(horizontal = 20.dp, vertical = 4.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
@@ -243,53 +248,61 @@ fun AppScreen() {
             }
         }
 
-        if (currentScreen == Screen.MAIN) {
-            MainContent(
-                set = set,
-                glyph = glyph,
-                shownLevel = shownLevel,
-                shownCharging = shownCharging,
-                chargingEmoji = chargingEmoji,
-                previewLevel = previewLevel,
-                onLevelChange = { previewLevel = it },
-                onResetPreview = { previewLevel = -1 },
-                mode = mode,
-                onModeChange = { applyMode(it) },
-                setId = setId,
-                onSetIdChange = {
-                    setId = it
-                    prefs.setId = it
-                },
-                numberIcon = numberIcon,
-                onNumberIconChange = {
-                    numberIcon = it
-                    prefs.numberIcon = it
-                },
-                onChargingEmojiChange = {
-                    chargingEmoji = it
-                    prefs.chargingEmoji = it
-                },
-                bubblePercent = bubblePercent,
-                onBubblePercentChange = {
-                    bubblePercent = it
-                    prefs.overlayShowPercent = it
-                },
-                bubbleSize = bubbleSize,
-                onBubbleSizeChange = {
-                    bubbleSize = it
-                    prefs.overlaySize = it
-                },
-                bubbleOpacity = bubbleOpacity,
-                onBubbleOpacityChange = {
-                    bubbleOpacity = it
-                    prefs.overlayOpacity = it
-                }
-            )
-        } else {
-            MoreContent()
-        }
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 20.dp)
+        ) {
+            if (currentScreen == Screen.MAIN) {
+                MainContent(
+                    set = set,
+                    glyph = glyph,
+                    shownLevel = shownLevel,
+                    shownCharging = shownCharging,
+                    chargingEmoji = chargingEmoji,
+                    previewLevel = previewLevel,
+                    onLevelChange = { previewLevel = it },
+                    onResetPreview = { previewLevel = -1 },
+                    mode = mode,
+                    onModeChange = { applyMode(it) },
+                    setId = setId,
+                    onSetIdChange = {
+                        setId = it
+                        prefs.setId = it
+                    },
+                    numberIcon = numberIcon,
+                    onNumberIconChange = {
+                        numberIcon = it
+                        prefs.numberIcon = it
+                    },
+                    onChargingEmojiChange = {
+                        chargingEmoji = it
+                        prefs.chargingEmoji = it
+                    },
+                    bubblePercent = bubblePercent,
+                    onBubblePercentChange = {
+                        bubblePercent = it
+                        prefs.overlayShowPercent = it
+                    },
+                    bubbleSize = bubbleSize,
+                    onBubbleSizeChange = {
+                        bubbleSize = it
+                        prefs.overlaySize = it
+                    },
+                    bubbleOpacity = bubbleOpacity,
+                    onBubbleOpacityChange = {
+                        bubbleOpacity = it
+                        prefs.overlayOpacity = it
+                    }
+                )
+            } else {
+                MoreContent()
+            }
 
-        Spacer(Modifier.height(40.dp))
+            Spacer(Modifier.height(40.dp))
+        }
     }
 }
 
@@ -751,7 +764,7 @@ private fun OnResume(action: () -> Unit) {
 
 @Composable
 private fun LanguageSwitcher() {
-    val currentLocale = AppCompatDelegate.getApplicationLocales().get(0)?.language ?: "cs"
+    val currentLocale = AppCompatDelegate.getApplicationLocales().get(0)?.language ?: "en"
 
     Row(
         verticalAlignment = Alignment.CenterVertically

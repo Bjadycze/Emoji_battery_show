@@ -1,4 +1,4 @@
-# Emoji baterie
+# Emoji status battery
 
 ## Build
 

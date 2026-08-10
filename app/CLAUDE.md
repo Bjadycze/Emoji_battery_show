@@ -1,4 +1,4 @@
-# Emoji Battery Show
+# Emoji status battery
 
 Android aplikace zobrazující stav baterie pomocí emoji. Cílová skupina: děti.
 Zdarma, bez reklam a plateb.

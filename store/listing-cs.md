@@ -1,13 +1,13 @@
 # Texty pro obchodní záznam (čeština)
 
 ## Název aplikace (max 30 znaků)
-Emoji baterie — bez reklam
+Emoji status battery — bez reklam
 
 ## Krátký popis (max 80 znaků)
 Stav baterie jako emoji. Zdarma, bez reklam, bez internetu.
 
 ## Úplný popis (max 4000 znaků)
-Emoji baterie ukazuje stav nabití jako emoji — ve stavovém řádku, v plovoucí bublině
+Emoji status battery ukazuje stav nabití jako emoji — ve stavovém řádku, v plovoucí bublině
 nebo jako widget na ploše. Zvolte si sadu, která vám sedí, a mějte přehled o baterii
 jedním pohledem.
 

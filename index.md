@@ -1,10 +1,10 @@
-# Zásady ochrany osobních údajů — Emoji baterie
+# Zásady ochrany osobních údajů — Emoji status battery
 
 *Platné od 8. srpna 2026*
 
 ## Stručně
 
-Aplikace **Emoji baterie** neshromažďuje, neukládá ani nesdílí žádné osobní údaje.
+Aplikace **Emoji status battery** neshromažďuje, neukládá ani nesdílí žádné osobní údaje.
 Nemá oprávnění pro přístup k internetu, takže nemůže odesílat data nikam mimo vaše
 zařízení. Neobsahuje reklamy, analytické nástroje ani nástroje pro sledování.
 
@@ -49,11 +49,11 @@ Dotazy k ochraně soukromí posílejte na: bjadycze@email.cz
 
 ---
 
-# Privacy Policy — Emoji Battery
+# Privacy Policy — Emoji status battery
 
 *Effective 8 August 2026*
 
-**Emoji Battery** collects, stores and shares no personal data. The app has no internet
+**Emoji status battery** collects, stores and shares no personal data. The app has no internet
 permission, so it cannot transmit anything off your device. It contains no ads, no
 analytics and no tracking.
 
